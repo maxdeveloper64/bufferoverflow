@@ -1,5 +1,3 @@
 #!/bin/bash
 
-bash -c "ulimit -c unlimited"
 bash -c "echo 'core.%p.%e.%t.%h' > /proc/sys/kernel/core_pattern"
-bash -c "sysctl -w kernel.randomize_va_space=0"
