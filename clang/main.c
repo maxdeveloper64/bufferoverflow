@@ -7,7 +7,12 @@ int line[3] = {1,2,3};
 int main(int argc, char *argv[]) {
 	int i, j;
 	
+	i = 0;	
 	printf("main started \n");
+	while(argv[i]) {
+		printf("%s \n", argv[i]);
+		i++;
+	}
 
 	for(i = 0; i < 2; i++) {
 		for(j = 0; j < 3; j++) {
